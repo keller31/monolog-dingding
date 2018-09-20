@@ -7,7 +7,7 @@ Monolog Handler for Dingding Robot
 ## 安装
 
 ```bash
-composer require keller/monolog-dingding
+composer require keller31/monolog-dingding
 ```
 
 ## 使用方法
