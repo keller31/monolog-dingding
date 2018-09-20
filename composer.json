@@ -1,0 +1,23 @@
+{
+    "name": "keller31/monolog-dingding",
+    "description": "Monolog Handler for Dingding Robot",
+    "keywords": [
+        "Dingding",
+        "monolog",
+        "logging",
+        "error",
+        "logs"
+    ],
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "keller",
+            "email": "admin@daniu.org"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "monolog/monolog": "^1.23"
+    }
+}
