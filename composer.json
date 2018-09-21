@@ -19,5 +19,10 @@
     "require": {
         "php": "^7.1",
         "monolog/monolog": "^1.23"
+    },
+    "autoload": {
+        "psr-4": {
+            "keller31\\MonologDingding\\": "src/"
+        }
     }
 }
