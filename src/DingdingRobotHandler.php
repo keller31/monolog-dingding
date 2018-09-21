@@ -38,7 +38,7 @@ class DingdingRobotHandler extends AbstractProcessingHandler
 	public function write(array $record)
 	{
 		$message['msgtype']         = 'text';
-		$message['text']['content'] = $record['channel'].'.'.$record['level_name'].PHP_EOL.$record['message'].PHP_EOL.json_encode($record['context']);
+		$message['text']['content'] = $record['channel'].'.'.$record['level_name'].PHP_EOL.$record['message'].PHP_EOL.json_encode($record['context'],JSON_UNESCAPED_UNICODE);
 		$this->dd_robot($message);
 	}
 
