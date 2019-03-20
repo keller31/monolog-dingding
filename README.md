@@ -1,6 +1,10 @@
 # monolog-dingding
 Monolog Handler for Dingding Robot
-
+<p>
+<a href="https://packagist.org/packages/keller31/monolog-dingding"><img src="https://poser.pugx.org/keller31/monolog-dingding/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/keller31/monolog-dingding"><img src="https://poser.pugx.org/keller31/monolog-dingding/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/keller31/monolog-dingding"><img src="https://poser.pugx.org/keller31/monolog-dingding/license.svg" alt="License"></a>
+</p>
 
 使用钉钉机器人发送monolog日志事件通知
 
