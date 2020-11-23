@@ -38,6 +38,20 @@ class DingdingRobotHandler extends AbstractProcessingHandler
 	public function write(array $record)
 	{
 		$message['msgtype']         = 'text';
+		if (strpos($record['message'], '@') !== false) {
+		    preg_match_all('/(\@(\d{11}|所有人))/u', $record['message'], $ats);
+		    if ($ats[1]) {
+		        $record['message'] = str_replace($ats[1], '', $record['message']);
+		        foreach ($ats[2] as $at){
+		            if ($at == '所有人') {
+		                $message['at']['isAtAll'] = true;
+		                break;
+		            } else {
+		                $message['at']['atMobiles'] = $ats[2];
+		            }
+		        }
+		    }
+		}
 		$message['text']['content'] = $record['channel'].'.'.$record['level_name'].PHP_EOL.$record['message'].PHP_EOL.json_encode($record['context'],JSON_UNESCAPED_UNICODE);
 		$this->dd_robot($message);
 	}
