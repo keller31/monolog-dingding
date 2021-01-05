@@ -6,6 +6,8 @@ Monolog Handler for Dingding Robot
 <a href="https://packagist.org/packages/keller31/monolog-dingding"><img src="https://poser.pugx.org/keller31/monolog-dingding/license.svg" alt="License"></a>
 </p>
 
+[![StyleCI](https://github.styleci.io/repos/149638859/shield?branch=master)](https://github.styleci.io/repos/149638859?branch=master)
+
 使用钉钉机器人发送monolog日志事件通知
 
 ## 安装
